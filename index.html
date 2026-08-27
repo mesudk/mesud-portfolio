@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-          content="Mesud - Web Developer, Designer and Digital Solutions Developer">
+          content="Mesud Kassaye - Web Developer, Digital Designer and Software Developer">
 
     <meta name="keywords"
-          content="Web Developer, HTML, CSS, JavaScript, PHP, MySQL, Web Design">
+          content="Mesud Kassaye, Web Developer, HTML, CSS, JavaScript, PHP, MySQL, Web Design">
 
-    <meta name="author" content="Mesud">
+    <meta name="author" content="Mesud Kassaye">
 
-    <title>Mesud | Web Developer & Digital Designer</title>
+    <title>Mesud Kassaye | Web Developer & Digital Designer</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
           rel="stylesheet">
 
     <!-- CSS -->
@@ -28,568 +28,904 @@
 
 <body>
 
-    <!-- ================= HEADER ================= -->
+<!-- ================= HEADER ================= -->
 
-    <header class="header">
+<header class="header">
 
-        <div class="container">
+    <div class="container">
 
-            <a href="profile.jpg" class="logo">
-                M<span>.</span>
-            </a>
+        <a href="#home" class="logo">
+            M<span>.</span>
+        </a>
 
-            <nav class="navbar">
+        <nav class="navbar" id="navbar">
 
-                <a href="profile.jpg" class="nav-link active">Home</a>
+            <a href="#home" class="nav-link active">Home</a>
 
-                <a href="#about" class="nav-link">About</a>
+            <a href="#about" class="nav-link">About</a>
 
-                <a href="#skills" class="nav-link">Skills</a>
+            <a href="#skills" class="nav-link">Skills</a>
 
-                <a href="#services" class="nav-link">Services</a>
+            <a href="#services" class="nav-link">Services</a>
 
-                <a href="#projects" class="nav-link">Projects</a>
+            <a href="#projects" class="nav-link">Projects</a>
 
-                <a href="#contact" class="nav-link">Contact</a>
+            <a href="#contact" class="nav-link">Contact</a>
 
-            </nav>
+        </nav>
 
-            <button class="menu-btn" id="menuBtn">
-                ☰
-            </button>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+            ☰
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- ================= MAIN ================= -->
+
+<main>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-bg-circle circle-one"></div>
+    <div class="hero-bg-circle circle-two"></div>
+
+    <div class="container hero-container">
+
+        <div class="hero-content">
+
+            <p class="hero-subtitle">
+                Hello, I'm
+            </p>
+
+            <h1>
+                Mesud
+            </h1>
+
+            <h2>
+                Web Developer <span>&</span><br>
+                Digital Designer
+            </h2>
+
+            <p class="hero-description">
+                I create modern, responsive websites, web applications
+                and digital solutions that help businesses and
+                organizations grow online.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn primary-btn">
+                    View My Work
+                </a>
+
+                <a href="#contact" class="btn secondary-btn">
+                    Contact Me
+                </a>
+
+            </div>
+
+            <div class="social-links">
+
+                <a href="https://www.youtube.com/@Ethiocoderss"
+                   target="_blank"
+                   rel="noopener">
+                    YouTube
+                </a>
+
+                <a href="https://www.linkedin.com/"
+                   target="_blank"
+                   rel="noopener">
+                    LinkedIn
+                </a>
+
+                <a href="https://t.me/Mesud36"
+                   target="_blank"
+                   rel="noopener">
+                    Telegram
+                </a>
+
+            </div>
 
         </div>
 
-    </header>
 
+        <!-- PROFILE -->
 
-    <!-- ================= HERO ================= -->
+        <div class="hero-image">
 
-    <main>
+            <div class="profile-card">
 
-        <section class="hero" id="home">
+                <div class="profile-glow"></div>
 
-            <div class="container hero-container">
+                <img src="profile.jpg"
+                     alt="Mesud Kassaye"
+                     class="profile-image">
 
-                <div class="hero-content">
+                <div class="profile-badge">
 
-                    <p class="hero-subtitle">
-                        Hello, I'm
-                    </p>
+                    <span class="status-dot"></span>
 
-                    <h1>
-                        Mesud
-                    </h1>
-
-                    <h2>
-                        Web Developer & Digital Designer
-                    </h2>
-
-                    <p class="hero-description">
-                        I create modern, responsive websites,
-                        web applications and digital solutions
-                        that help businesses and organizations
-                        grow online.
-                    </p>
-
-                    <div class="hero-buttons">
-
-                        <a href="#projects" class="btn primary-btn">
-                            View My Work
-                        </a>
-
-                        <a href="#contact" class="btn secondary-btn">
-                            Contact Me
-                        </a>
-
-                    </div>
-
-                    <div class="social-links">
-
-                        <a href="https://www.youtube.com/@Ethiocoderss" aria-label="Youtube">
-                            youtube
-                        </a>
-
-                        <a href="mesudks" aria-label="LinkedIn">
-                            LinkedIn
-                        </a>
-
-                        <a href="@Mesud36" aria-label="Telegram">
-                            Telegram
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-                <div class="hero-image">
-
-                    <div class="profile-card">
-
-                        <div class="profile-placeholder">
-                            M
-                        </div>
-
-                    </div>
+                    Available for Projects
 
                 </div>
 
             </div>
-
-        </section>
-
-
-        <!-- ================= ABOUT ================= -->
-
-        <section class="about section" id="about">
-
-            <div class="container">
-
-                <div class="section-title">
-
-                    <p>ABOUT ME</p>
-
-                    <h2>
-                        Turning Ideas Into Digital Solutions
-                    </h2>
-
-                </div>
-
-                <div class="about-content">
-
-                    <div class="about-text">
-
-                        <p>
-                            I am a passionate web developer and
-                            digital designer interested in building
-                            useful, modern and responsive digital
-                            experiences.
-                        </p>
-
-                        <p>
-                            I work with technologies such as HTML,
-                            CSS, JavaScript, PHP and MySQL to create
-                            websites and web applications.
-                        </p>
-
-                        <a href="cv_51.pdf"
-                           class="btn primary-btn"
-                           download>
-                            Download CV
-                        </a>
-
-                    </div>
-
-                    <div class="about-info">
-
-                        <div class="info-item">
-                            <strong>Web Development</strong>
-                            <span>Frontend & Backend</span>
-                        </div>
-
-                        <div class="info-item">
-                            <strong>Database</strong>
-                            <span>PHP & MySQL</span>
-                        </div>
-
-                        <div class="info-item">
-                            <strong>Design</strong>
-                            <span>UI, Graphics & Branding</span>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= SKILLS ================= -->
-
-        <section class="skills section" id="skills">
-
-            <div class="container">
-
-                <div class="section-title">
-
-                    <p>MY SKILLS</p>
-
-                    <h2>
-                        Technologies I Work With
-                    </h2>
-
-                </div>
-
-                <div class="skills-grid">
-
-                    <div class="skill-card">
-                        <h3>HTML</h3>
-                        <p>Semantic & accessible web structure</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <h3>CSS</h3>
-                        <p>Responsive and modern interfaces</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <h3>JavaScript</h3>
-                        <p>Interactive web applications</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <h3>PHP</h3>
-                        <p>Backend web development</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <h3>MySQL</h3>
-                        <p>Database design and management</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <h3>Bootstrap</h3>
-                        <p>Fast responsive UI development</p>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= SERVICES ================= -->
-
-        <section class="services section" id="services">
-
-            <div class="container">
-
-                <div class="section-title">
-
-                    <p>WHAT I DO</p>
-
-                    <h2>
-                        My Services
-                    </h2>
-
-                </div>
-
-                <div class="services-grid">
-
-                    <div class="service-card">
-
-                        <div class="service-icon">
-                            💻
-                        </div>
-
-                        <h3>
-                            Web Development
-                        </h3>
-
-                        <p>
-                            Professional responsive websites
-                            and web applications.
-                        </p>
-
-                    </div>
-
-
-                    <div class="service-card">
-
-                        <div class="service-icon">
-                            🎨
-                        </div>
-
-                        <h3>
-                            Graphic Design
-                        </h3>
-
-                        <p>
-                            Logos, banners, posters and
-                            digital marketing designs.
-                        </p>
-
-                    </div>
-
-
-                    <div class="service-card">
-
-                        <div class="service-icon">
-                            🏫
-                        </div>
-
-                        <h3>
-                            School Management Systems
-                        </h3>
-
-                        <p>
-                            Database-driven systems for
-                            schools and organizations.
-                        </p>
-
-                    </div>
-
-
-                    <div class="service-card">
-
-                        <div class="service-icon">
-                            🎬
-                        </div>
-
-                        <h3>
-                            Video Editing
-                        </h3>
-
-                        <p>
-                            Professional video editing
-                            for social media and businesses.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= PROJECTS ================= -->
-
-        <section class="projects section" id="projects">
-
-            <div class="container">
-
-                <div class="section-title">
-
-                    <p>MY WORK</p>
-
-                    <h2>
-                        Featured Projects
-                    </h2>
-
-                </div>
-
-                <div class="projects-grid">
-
-                    <article class="project-card">
-
-                        <div class="project-image">
-                            Project 01
-                        </div>
-
-                        <div class="project-content">
-
-                            <h3>
-                                School Management System
-                            </h3>
-
-                            <p>
-                                A web-based system for managing
-                                students, teachers, subjects,
-                                marks and academic records.
-                            </p>
-
-                            <div class="project-tech">
-                                PHP · MySQL · JavaScript · CSS
-                            </div>
-
-                            <a href="#" class="project-link">
-                                View Project →
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                    <article class="project-card">
-
-                        <div class="project-image">
-                            Project 02
-                        </div>
-
-                        <div class="project-content">
-
-                            <h3>
-                                Business Website
-                            </h3>
-
-                            <p>
-                                A responsive professional website
-                                designed for a modern business.
-                            </p>
-
-                            <div class="project-tech">
-                                HTML · CSS · JavaScript
-                            </div>
-
-                            <a href="https://mesudkassayemuhe.ct.ws/" class="project-link">
-                                View Project →
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                    <article class="project-card">
-
-                        <div class="project-image">
-                            Project 03
-                        </div>
-
-                        <div class="project-content">
-
-                            <h3>
-                                Personal Portfolio
-                            </h3>
-
-                            <p>
-                                A modern portfolio website showcasing
-                                skills, services and projects.
-                            </p>
-
-                            <div class="project-tech">
-                                HTML · CSS · JavaScript
-                            </div>
-
-                            <a href="#" class="project-link">
-                                View Project →
-                            </a>
-
-                        </div>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= CONTACT ================= -->
-
-        <section class="contact section" id="contact">
-
-            <div class="container">
-
-                <div class="section-title">
-
-                    <p>CONTACT ME</p>
-
-                    <h2>
-                        Let's Work Together
-                    </h2>
-
-                </div>
-
-                <div class="contact-content">
-
-                    <div class="contact-info">
-
-                        <h3>
-                            Have a project in mind?
-                        </h3>
-
-                        <p>
-                            Contact me and let's discuss how
-                            I can help turn your idea into
-                            a professional digital solution.
-                        </p>
-
-                        <div class="contact-item">
-                            <strong>Email</strong>
-                            <span>mesudks67gmail.com</span>
-                        </div>
-
-                        <div class="contact-item">
-                            <strong>Phone</strong>
-                            <span>+251914441094</span>
-                        </div>
-
-                        <div class="contact-item">
-                            <strong>Location</strong>
-                            <span>Ethiopia</span>
-                        </div>
-
-                    </div>
-
-
-                    <form class="contact-form" id="contactForm">
-
-                        <input
-                            type="text"
-                            name="name"
-                            placeholder="Mesud Kassaye"
-                            required
-                        >
-
-                        <input
-                            type="email"
-                            name="email"
-                            placeholder="mesudks67@gmail.com"
-                            required
-                        >
-
-                        <input
-                            type="text"
-                            name="subject"
-                            placeholder="Web Design"
-                            required
-                        >
-
-                        <textarea
-                            name="message"
-                            rows="6"
-                            placeholder="Your Message"
-                            required
-                        ></textarea>
-
-                        <button
-                            type="submit"
-                            class="btn primary-btn">
-                            Send Message
-                        </button>
-
-                    </form>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- ================= FOOTER ================= -->
-
-    <footer class="footer">
-
-        <div class="container">
-
-            <p>
-                © <span id="year"></span> Mesud.
-                All Rights Reserved.
-            </p>
-
-            <p>
-                Designed & Developed by Mesud
-            </p>
 
         </div>
 
-    </footer>
+    </div>
+
+</section>
 
 
-    <!-- JavaScript -->
-    <script src="js/script.js"></script>
+<!-- ================= ABOUT ================= -->
+
+<section class="about section" id="about">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <p>ABOUT ME</p>
+
+            <h2>
+                Turning Ideas Into Digital Solutions
+            </h2>
+
+        </div>
+
+
+        <div class="about-content">
+
+            <div class="about-text">
+
+                <p>
+                    I am a passionate web developer and digital designer
+                    interested in building useful, modern and responsive
+                    digital experiences.
+                </p>
+
+                <p>
+                    I work with technologies such as HTML, CSS,
+                    JavaScript, PHP and MySQL to create websites,
+                    web applications and database-driven systems.
+                </p>
+
+                <p>
+                    I also have experience in graphic design,
+                    branding, video editing and digital content creation.
+                </p>
+
+                <a href="cv_51.pdf"
+                   class="btn primary-btn"
+                   download>
+                    Download CV
+                </a>
+
+            </div>
+
+
+            <div class="about-info">
+
+                <div class="info-item">
+
+                    <div class="info-number">
+                        01
+                    </div>
+
+                    <div>
+                        <strong>Web Development</strong>
+                        <span>Frontend & Backend</span>
+                    </div>
+
+                </div>
+
+
+                <div class="info-item">
+
+                    <div class="info-number">
+                        02
+                    </div>
+
+                    <div>
+                        <strong>Database Development</strong>
+                        <span>PHP & MySQL</span>
+                    </div>
+
+                </div>
+
+
+                <div class="info-item">
+
+                    <div class="info-number">
+                        03
+                    </div>
+
+                    <div>
+                        <strong>Digital Design</strong>
+                        <span>UI, Graphics & Branding</span>
+                    </div>
+
+                </div>
+
+
+                <div class="info-item">
+
+                    <div class="info-number">
+                        04
+                    </div>
+
+                    <div>
+                        <strong>Video Editing</strong>
+                        <span>Social Media Content</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SKILLS ================= -->
+
+<section class="skills section" id="skills">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <p>MY SKILLS</p>
+
+            <h2>
+                Technologies I Work With
+            </h2>
+
+        </div>
+
+
+        <div class="skills-grid">
+
+
+            <!-- HTML -->
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    HTML
+                </div>
+
+                <h3>
+                    HTML
+                </h3>
+
+                <p>
+                    Semantic and accessible web structure.
+                </p>
+
+                <div class="skill-line">
+                    <span style="width: 95%;"></span>
+                </div>
+
+                <small>
+                    95%
+                </small>
+
+            </div>
+
+
+            <!-- CSS -->
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    CSS
+                </div>
+
+                <h3>
+                    CSS
+                </h3>
+
+                <p>
+                    Modern responsive interfaces and animations.
+                </p>
+
+                <div class="skill-line">
+                    <span style="width: 90%;"></span>
+                </div>
+
+                <small>
+                    90%
+                </small>
+
+            </div>
+
+
+            <!-- JavaScript -->
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    JS
+                </div>
+
+                <h3>
+                    JavaScript
+                </h3>
+
+                <p>
+                    Interactive and dynamic web applications.
+                </p>
+
+                <div class="skill-line">
+                    <span style="width: 85%;"></span>
+                </div>
+
+                <small>
+                    85%
+                </small>
+
+            </div>
+
+
+            <!-- PHP -->
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    PHP
+                </div>
+
+                <h3>
+                    PHP
+                </h3>
+
+                <p>
+                    Backend development and server-side systems.
+                </p>
+
+                <div class="skill-line">
+                    <span style="width: 85%;"></span>
+                </div>
+
+                <small>
+                    85%
+                </small>
+
+            </div>
+
+
+            <!-- MySQL -->
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    SQL
+                </div>
+
+                <h3>
+                    MySQL
+                </h3>
+
+                <p>
+                    Database design and management.
+                </p>
+
+                <div class="skill-line">
+                    <span style="width: 85%;"></span>
+                </div>
+
+                <small>
+                    85%
+                </small>
+
+            </div>
+
+
+            <!-- Bootstrap -->
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    BS
+                </div>
+
+                <h3>
+                    Bootstrap
+                </h3>
+
+                <p>
+                    Fast and responsive UI development.
+                </p>
+
+                <div class="skill-line">
+                    <span style="width: 90%;"></span>
+                </div>
+
+                <small>
+                    90%
+                </small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SERVICES ================= -->
+
+<section class="services section" id="services">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <p>WHAT I DO</p>
+
+            <h2>
+                My Services
+            </h2>
+
+        </div>
+
+
+        <div class="services-grid">
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    💻
+                </div>
+
+                <h3>
+                    Web Development
+                </h3>
+
+                <p>
+                    Professional responsive websites and
+                    modern web applications.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🎨
+                </div>
+
+                <h3>
+                    Graphic Design
+                </h3>
+
+                <p>
+                    Logos, banners, posters and digital
+                    marketing designs.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🏫
+                </div>
+
+                <h3>
+                    School Management Systems
+                </h3>
+
+                <p>
+                    Database-driven systems for schools
+                    and organizations.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🎬
+                </div>
+
+                <h3>
+                    Video Editing
+                </h3>
+
+                <p>
+                    Professional video editing for social
+                    media and businesses.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PROJECTS ================= -->
+
+<section class="projects section" id="projects">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <p>MY WORK</p>
+
+            <h2>
+                Featured Projects
+            </h2>
+
+        </div>
+
+
+        <div class="projects-grid">
+
+
+            <!-- PROJECT 1 -->
+
+            <article class="project-card">
+
+                <div class="project-image project-one">
+
+                    <span>
+                        PROJECT 01
+                    </span>
+
+                    <strong>
+                        School Management
+                    </strong>
+
+                </div>
+
+
+                <div class="project-content">
+
+                    <h3>
+                        School Management System
+                    </h3>
+
+                    <p>
+                        A web-based system for managing students,
+                        teachers, subjects, marks and academic records.
+                    </p>
+
+                    <div class="project-tech">
+                        PHP · MySQL · JavaScript · CSS
+                    </div>
+
+                    <a href="#"
+                       class="project-link">
+                        View Project →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- PROJECT 2 -->
+
+            <article class="project-card">
+
+                <div class="project-image project-two">
+
+                    <span>
+                        PROJECT 02
+                    </span>
+
+                    <strong>
+                        Business Website
+                    </strong>
+
+                </div>
+
+
+                <div class="project-content">
+
+                    <h3>
+                        Business Website
+                    </h3>
+
+                    <p>
+                        A responsive professional website designed
+                        for a modern business.
+                    </p>
+
+                    <div class="project-tech">
+                        HTML · CSS · JavaScript
+                    </div>
+
+                    <a href="https://mesudkassayemuhe.ct.ws/"
+                       target="_blank"
+                       rel="noopener"
+                       class="project-link">
+                        View Project →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- PROJECT 3 -->
+
+            <article class="project-card">
+
+                <div class="project-image project-three">
+
+                    <span>
+                        PROJECT 03
+                    </span>
+
+                    <strong>
+                        Personal Portfolio
+                    </strong>
+
+                </div>
+
+
+                <div class="project-content">
+
+                    <h3>
+                        Personal Portfolio
+                    </h3>
+
+                    <p>
+                        A modern portfolio website showcasing
+                        skills, services and projects.
+                    </p>
+
+                    <div class="project-tech">
+                        HTML · CSS · JavaScript
+                    </div>
+
+                    <a href="#"
+                       class="project-link">
+                        View Project →
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact section" id="contact">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <p>CONTACT ME</p>
+
+            <h2>
+                Let's Work Together
+            </h2>
+
+        </div>
+
+
+        <div class="contact-content">
+
+
+            <!-- CONTACT INFO -->
+
+            <div class="contact-info">
+
+                <h3>
+                    Have a project in mind?
+                </h3>
+
+                <p>
+                    Contact me and let's discuss how I can help
+                    turn your idea into a professional digital solution.
+                </p>
+
+
+                <div class="contact-item">
+
+                    <strong>
+                        Email
+                    </strong>
+
+                    <a href="mailto:mesudks67@gmail.com">
+                        mesudks67@gmail.com
+                    </a>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <strong>
+                        Phone
+                    </strong>
+
+                    <a href="tel:+251914441094">
+                        +251 914 441 094
+                    </a>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <strong>
+                        Telegram
+                    </strong>
+
+                    <a href="https://t.me/Mesud36"
+                       target="_blank"
+                       rel="noopener">
+                        @Mesud36
+                    </a>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <strong>
+                        Location
+                    </strong>
+
+                    <span>
+                        Ethiopia
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONTACT FORM -->
+
+            <form class="contact-form"
+                  id="contactForm">
+
+
+                <div class="input-group">
+
+                    <label>
+                        Your Name
+                    </label>
+
+                    <input
+                        type="text"
+                        name="name"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>
+                        Your Email
+                    </label>
+
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="your@email.com"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>
+                        Subject
+                    </label>
+
+                    <input
+                        type="text"
+                        name="subject"
+                        placeholder="Web Design"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>
+                        Message
+                    </label>
+
+                    <textarea
+                        name="message"
+                        rows="6"
+                        placeholder="Write your message..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn primary-btn">
+
+                    Send Message
+
+                </button>
+
+
+                <p
+                    class="form-message"
+                    id="formMessage">
+                </p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <p>
+            © <span id="year"></span> Mesud Kassaye.
+            All Rights Reserved.
+        </p>
+
+        <p>
+            Designed & Developed by
+            <strong>Mesud</strong>
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- JavaScript -->
+
+<script src="js/script.js"></script>
 
 </body>
 </html>
