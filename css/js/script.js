@@ -1,127 +1,87 @@
-/* =================================
+/* =========================================================
    MESUD PORTFOLIO JAVASCRIPT
-================================ */
+========================================================= */
 
 
-/* ---------- MOBILE MENU ---------- */
+/* ================= MOBILE MENU ================= */
 
 const menuBtn = document.getElementById("menuBtn");
-const navbar = document.querySelector(".navbar");
 
-if (menuBtn && navbar) {
-
-    menuBtn.addEventListener("click", () => {
-
-        navbar.classList.toggle("show");
-
-        const isOpen = navbar.classList.contains("show");
-
-        menuBtn.setAttribute(
-            "aria-expanded",
-            isOpen
-        );
-
-    });
-
-}
+const navbar = document.getElementById("navbar");
 
 
-/* ---------- CLOSE MOBILE MENU ---------- */
+menuBtn.addEventListener("click", () => {
 
-const navLinks = document.querySelectorAll(".nav-link");
+    navbar.classList.toggle("active");
+
+});
+
+
+/* ================= CLOSE MENU ================= */
+
+const navLinks =
+    document.querySelectorAll(".nav-link");
+
 
 navLinks.forEach(link => {
 
     link.addEventListener("click", () => {
 
-        if (navbar) {
-            navbar.classList.remove("show");
-        }
-
-        if (menuBtn) {
-            menuBtn.setAttribute(
-                "aria-expanded",
-                "false"
-            );
-        }
+        navbar.classList.remove("active");
 
     });
 
 });
 
 
-/* ---------- CURRENT YEAR ---------- */
-
-const yearElement = document.getElementById("year");
-
-if (yearElement) {
-
-    yearElement.textContent =
-        new Date().getFullYear();
-
-}
-
-
-/* ---------- CONTACT FORM ---------- */
-
-const contactForm =
-    document.getElementById("contactForm");
-
-if (contactForm) {
-
-    contactForm.addEventListener(
-        "submit",
-        function (event) {
-
-            event.preventDefault();
-
-            alert(
-                "Thank you for your message! " +
-                "I will get back to you soon."
-            );
-
-            contactForm.reset();
-
-        }
-    );
-
-}
-
-
-/* ---------- ACTIVE NAVIGATION ---------- */
+/* ================= ACTIVE NAVIGATION ================= */
 
 const sections =
     document.querySelectorAll("section[id]");
 
+
 window.addEventListener("scroll", () => {
 
-    let currentSection = "";
+    const scrollPosition =
+        window.scrollY + 150;
+
 
     sections.forEach(section => {
 
         const sectionTop =
-            section.offsetTop - 120;
+            section.offsetTop;
+
+        const sectionHeight =
+            section.offsetHeight;
+
+        const sectionId =
+            section.getAttribute("id");
+
 
         if (
-            window.scrollY >= sectionTop
+            scrollPosition >= sectionTop &&
+            scrollPosition < sectionTop + sectionHeight
         ) {
-            currentSection =
-                section.getAttribute("id");
-        }
 
-    });
+            navLinks.forEach(link => {
 
-    navLinks.forEach(link => {
+                link.classList.remove("active");
 
-        link.classList.remove("active");
+            });
 
-        const target =
-            link.getAttribute("href");
 
-        if (
-            target === "#" + currentSection
-        ) {
-            link.classList.add("active");
+            const activeLink =
+                document.querySelector(
+                    `.nav-link[href="#${sectionId}"]`
+                );
+
+
+            if (activeLink) {
+
+                activeLink.classList.add("active");
+
+            }
+
         }
 
     });
@@ -129,10 +89,41 @@ window.addEventListener("scroll", () => {
 });
 
 
-/* ---------- SCROLL TO TOP ---------- */
+/* ================= CURRENT YEAR ================= */
 
-window.addEventListener("load", () => {
+const year =
+    document.getElementById("year");
 
-    window.scrollTo(0, 0);
+
+year.textContent =
+    new Date().getFullYear();
+
+
+/* ================= CONTACT FORM ================= */
+
+const contactForm =
+    document.getElementById("contactForm");
+
+const formMessage =
+    document.getElementById("formMessage");
+
+
+contactForm.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+
+    formMessage.textContent =
+        "Thank you! Your message has been received.";
+
+
+    contactForm.reset();
+
+
+    setTimeout(() => {
+
+        formMessage.textContent = "";
+
+    }, 5000);
 
 });
