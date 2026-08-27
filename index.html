@@ -1,1952 +1,595 @@
-```css
-/* =========================================================
-   MESUD PORTFOLIO
-   MODERN DARK / GLASS DESIGN
-========================================================= */
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-/* ================= ROOT ================= */
+    <meta name="description"
+          content="Mesud - Web Developer, Designer and Digital Solutions Developer">
 
-:root {
+    <meta name="keywords"
+          content="Web Developer, HTML, CSS, JavaScript, PHP, MySQL, Web Design">
 
-    --bg: #050b16;
+    <meta name="author" content="Mesud">
 
-    --bg2: #081323;
+    <title>Mesud | Web Developer & Digital Designer</title>
 
-    --card: rgba(15, 30, 50, 0.72);
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    --primary: #38bdf8;
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
 
-    --primary-dark: #0284c7;
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-    --secondary: #8b5cf6;
+<body>
 
-    --cyan: #22d3ee;
+    <!-- ================= HEADER ================= -->
 
-    --white: #ffffff;
+    <header class="header">
 
-    --text: #f8fafc;
+        <div class="container">
 
-    --text-light: #cbd5e1;
+            <a href="profile.jpg" class="logo">
+                M<span>.</span>
+            </a>
 
-    --muted: #94a3b8;
+            <nav class="navbar">
 
-    --border: rgba(255,255,255,0.09);
+                <a href="profile.jpg" class="nav-link active">Home</a>
 
-    --radius: 20px;
+                <a href="#about" class="nav-link">About</a>
 
-    --container: 1180px;
+                <a href="#skills" class="nav-link">Skills</a>
 
-    --transition: .3s ease;
+                <a href="#services" class="nav-link">Services</a>
 
-}
+                <a href="#projects" class="nav-link">Projects</a>
 
+                <a href="#contact" class="nav-link">Contact</a>
 
-/* ================= RESET ================= */
+            </nav>
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+            <button class="menu-btn" id="menuBtn">
+                ☰
+            </button>
 
+        </div>
 
-html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 90px;
-}
+    </header>
 
 
-body {
+    <!-- ================= HERO ================= -->
 
-    font-family: "Inter", sans-serif;
+    <main>
 
-    color: var(--text);
+        <section class="hero" id="home">
 
-    background:
+            <div class="container hero-container">
 
-        radial-gradient(
-            circle at 10% 10%,
-            rgba(56,189,248,.12),
-            transparent 30%
-        ),
+                <div class="hero-content">
 
-        radial-gradient(
-            circle at 90% 20%,
-            rgba(139,92,246,.14),
-            transparent 30%
-        ),
+                    <p class="hero-subtitle">
+                        Hello, I'm
+                    </p>
 
-        radial-gradient(
-            circle at 50% 90%,
-            rgba(34,211,238,.08),
-            transparent 35%
-        ),
+                    <h1>
+                        Mesud
+                    </h1>
 
-        var(--bg);
+                    <h2>
+                        Web Developer & Digital Designer
+                    </h2>
 
-    line-height: 1.7;
+                    <p class="hero-description">
+                        I create modern, responsive websites,
+                        web applications and digital solutions
+                        that help businesses and organizations
+                        grow online.
+                    </p>
 
-    overflow-x: hidden;
+                    <div class="hero-buttons">
 
-}
+                        <a href="#projects" class="btn primary-btn">
+                            View My Work
+                        </a>
 
+                        <a href="#contact" class="btn secondary-btn">
+                            Contact Me
+                        </a>
 
-body::before {
+                    </div>
 
-    content: "";
+                    <div class="social-links">
 
-    position: fixed;
+                        <a href="https://www.youtube.com/@Ethiocoderss" aria-label="Youtube">
+                            youtube
+                        </a>
 
-    inset: 0;
+                        <a href="mesudks" aria-label="LinkedIn">
+                            LinkedIn
+                        </a>
 
-    pointer-events: none;
+                        <a href="@Mesud36" aria-label="Telegram">
+                            Telegram
+                        </a>
 
-    z-index: -1;
+                    </div>
 
-    background-image:
+                </div>
 
-        linear-gradient(
-            rgba(255,255,255,.025) 1px,
-            transparent 1px
-        ),
 
-        linear-gradient(
-            90deg,
-            rgba(255,255,255,.025) 1px,
-            transparent 1px
-        );
+                <div class="hero-image">
 
-    background-size: 50px 50px;
+                    <div class="profile-card">
 
-}
+                        <div class="profile-placeholder">
+                            M
+                        </div>
 
+                    </div>
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
+                </div>
 
+            </div>
 
-button,
-input,
-textarea {
-    font: inherit;
-}
+        </section>
 
 
-.container {
+        <!-- ================= ABOUT ================= -->
 
-    width: min(92%, var(--container));
+        <section class="about section" id="about">
 
-    margin: auto;
+            <div class="container">
 
-}
+                <div class="section-title">
 
+                    <p>ABOUT ME</p>
 
-.section {
-    padding: 110px 0;
-}
+                    <h2>
+                        Turning Ideas Into Digital Solutions
+                    </h2>
 
+                </div>
 
-/* ================= SCROLLBAR ================= */
+                <div class="about-content">
 
-::-webkit-scrollbar {
-    width: 9px;
-}
+                    <div class="about-text">
 
+                        <p>
+                            I am a passionate web developer and
+                            digital designer interested in building
+                            useful, modern and responsive digital
+                            experiences.
+                        </p>
 
-::-webkit-scrollbar-track {
-    background: #030711;
-}
+                        <p>
+                            I work with technologies such as HTML,
+                            CSS, JavaScript, PHP and MySQL to create
+                            websites and web applications.
+                        </p>
 
+                        <a href="cv_51.pdf"
+                           class="btn primary-btn"
+                           download>
+                            Download CV
+                        </a>
 
-::-webkit-scrollbar-thumb {
+                    </div>
 
-    background:
-        linear-gradient(
-            var(--primary),
-            var(--secondary)
-        );
+                    <div class="about-info">
 
-    border-radius: 20px;
+                        <div class="info-item">
+                            <strong>Web Development</strong>
+                            <span>Frontend & Backend</span>
+                        </div>
 
-}
+                        <div class="info-item">
+                            <strong>Database</strong>
+                            <span>PHP & MySQL</span>
+                        </div>
 
+                        <div class="info-item">
+                            <strong>Design</strong>
+                            <span>UI, Graphics & Branding</span>
+                        </div>
 
-/* ================= HEADER ================= */
+                    </div>
 
-.header {
+                </div>
 
-    position: fixed;
+            </div>
 
-    top: 0;
-    left: 0;
+        </section>
 
-    width: 100%;
 
-    z-index: 1000;
+        <!-- ================= SKILLS ================= -->
 
-    background:
-        rgba(5,11,22,.72);
+        <section class="skills section" id="skills">
 
-    backdrop-filter:
-        blur(18px);
+            <div class="container">
 
-    border-bottom:
-        1px solid var(--border);
+                <div class="section-title">
 
-}
+                    <p>MY SKILLS</p>
 
+                    <h2>
+                        Technologies I Work With
+                    </h2>
 
-.header .container {
+                </div>
 
-    min-height: 76px;
+                <div class="skills-grid">
 
-    display: flex;
+                    <div class="skill-card">
+                        <h3>HTML</h3>
+                        <p>Semantic & accessible web structure</p>
+                    </div>
 
-    align-items: center;
+                    <div class="skill-card">
+                        <h3>CSS</h3>
+                        <p>Responsive and modern interfaces</p>
+                    </div>
 
-    justify-content: space-between;
+                    <div class="skill-card">
+                        <h3>JavaScript</h3>
+                        <p>Interactive web applications</p>
+                    </div>
 
-}
+                    <div class="skill-card">
+                        <h3>PHP</h3>
+                        <p>Backend web development</p>
+                    </div>
 
+                    <div class="skill-card">
+                        <h3>MySQL</h3>
+                        <p>Database design and management</p>
+                    </div>
 
-/* ================= LOGO ================= */
+                    <div class="skill-card">
+                        <h3>Bootstrap</h3>
+                        <p>Fast responsive UI development</p>
+                    </div>
 
-.logo {
+                </div>
 
-    width: 48px;
-    height: 48px;
+            </div>
 
-    display: grid;
+        </section>
 
-    place-items: center;
 
-    font-family: "Poppins", sans-serif;
+        <!-- ================= SERVICES ================= -->
 
-    font-size: 25px;
+        <section class="services section" id="services">
 
-    font-weight: 800;
+            <div class="container">
 
-    border-radius: 14px;
+                <div class="section-title">
 
-    color: white;
+                    <p>WHAT I DO</p>
 
-    background:
-        linear-gradient(
-            135deg,
-            var(--primary),
-            var(--secondary)
-        );
+                    <h2>
+                        My Services
+                    </h2>
 
-    box-shadow:
-        0 0 30px
-        rgba(56,189,248,.25);
+                </div>
 
-    transition: var(--transition);
+                <div class="services-grid">
 
-}
+                    <div class="service-card">
 
+                        <div class="service-icon">
+                            💻
+                        </div>
 
-.logo span {
-    color: #dbeafe;
-}
+                        <h3>
+                            Web Development
+                        </h3>
 
+                        <p>
+                            Professional responsive websites
+                            and web applications.
+                        </p>
 
-.logo:hover {
+                    </div>
 
-    transform:
-        translateY(-3px)
-        rotate(-3deg);
 
-}
+                    <div class="service-card">
 
+                        <div class="service-icon">
+                            🎨
+                        </div>
 
-/* ================= NAV ================= */
+                        <h3>
+                            Graphic Design
+                        </h3>
 
-.navbar {
+                        <p>
+                            Logos, banners, posters and
+                            digital marketing designs.
+                        </p>
 
-    display: flex;
+                    </div>
 
-    align-items: center;
 
-    gap: 32px;
+                    <div class="service-card">
 
-}
+                        <div class="service-icon">
+                            🏫
+                        </div>
 
+                        <h3>
+                            School Management Systems
+                        </h3>
 
-.nav-link {
+                        <p>
+                            Database-driven systems for
+                            schools and organizations.
+                        </p>
 
-    position: relative;
+                    </div>
 
-    color: var(--text-light);
 
-    font-size: 14px;
+                    <div class="service-card">
 
-    font-weight: 600;
+                        <div class="service-icon">
+                            🎬
+                        </div>
 
-    transition: var(--transition);
+                        <h3>
+                            Video Editing
+                        </h3>
 
-}
+                        <p>
+                            Professional video editing
+                            for social media and businesses.
+                        </p>
 
+                    </div>
 
-.nav-link::after {
+                </div>
 
-    content: "";
+            </div>
 
-    position: absolute;
+        </section>
 
-    left: 0;
 
-    bottom: -9px;
+        <!-- ================= PROJECTS ================= -->
 
-    width: 0;
+        <section class="projects section" id="projects">
 
-    height: 2px;
+            <div class="container">
 
-    background:
-        linear-gradient(
-            90deg,
-            var(--primary),
-            var(--secondary)
-        );
+                <div class="section-title">
 
-    transition: var(--transition);
+                    <p>MY WORK</p>
 
-}
+                    <h2>
+                        Featured Projects
+                    </h2>
 
+                </div>
 
-.nav-link:hover,
-.nav-link.active {
+                <div class="projects-grid">
 
-    color: white;
+                    <article class="project-card">
 
-}
+                        <div class="project-image">
+                            Project 01
+                        </div>
 
+                        <div class="project-content">
 
-.nav-link:hover::after,
-.nav-link.active::after {
+                            <h3>
+                                School Management System
+                            </h3>
 
-    width: 100%;
+                            <p>
+                                A web-based system for managing
+                                students, teachers, subjects,
+                                marks and academic records.
+                            </p>
 
-}
+                            <div class="project-tech">
+                                PHP · MySQL · JavaScript · CSS
+                            </div>
 
+                            <a href="#" class="project-link">
+                                View Project →
+                            </a>
 
-/* ================= MENU ================= */
+                        </div>
 
-.menu-btn {
+                    </article>
 
-    display: none;
 
-    background: none;
+                    <article class="project-card">
 
-    border: none;
+                        <div class="project-image">
+                            Project 02
+                        </div>
 
-    color: white;
+                        <div class="project-content">
 
-    font-size: 28px;
+                            <h3>
+                                Business Website
+                            </h3>
 
-    cursor: pointer;
+                            <p>
+                                A responsive professional website
+                                designed for a modern business.
+                            </p>
 
-}
+                            <div class="project-tech">
+                                HTML · CSS · JavaScript
+                            </div>
 
+                            <a href="https://mesudkassayemuhe.ct.ws/" class="project-link">
+                                View Project →
+                            </a>
 
-/* ================= HERO ================= */
+                        </div>
 
-.hero {
+                    </article>
 
-    min-height: 100vh;
 
-    display: flex;
+                    <article class="project-card">
 
-    align-items: center;
+                        <div class="project-image">
+                            Project 03
+                        </div>
 
-    position: relative;
+                        <div class="project-content">
 
-    padding-top: 90px;
+                            <h3>
+                                Personal Portfolio
+                            </h3>
 
-    overflow: hidden;
+                            <p>
+                                A modern portfolio website showcasing
+                                skills, services and projects.
+                            </p>
 
-}
+                            <div class="project-tech">
+                                HTML · CSS · JavaScript
+                            </div>
 
+                            <a href="#" class="project-link">
+                                View Project →
+                            </a>
 
-.hero::before {
+                        </div>
 
-    content: "";
+                    </article>
 
-    position: absolute;
+                </div>
 
-    width: 500px;
-    height: 500px;
+            </div>
 
-    left: -250px;
+        </section>
 
-    top: 15%;
 
-    background: var(--primary);
+        <!-- ================= CONTACT ================= -->
 
-    opacity: .07;
+        <section class="contact section" id="contact">
 
-    filter: blur(110px);
+            <div class="container">
 
-    border-radius: 50%;
+                <div class="section-title">
 
-}
+                    <p>CONTACT ME</p>
 
+                    <h2>
+                        Let's Work Together
+                    </h2>
 
-.hero::after {
+                </div>
 
-    content: "";
+                <div class="contact-content">
 
-    position: absolute;
+                    <div class="contact-info">
 
-    width: 500px;
-    height: 500px;
+                        <h3>
+                            Have a project in mind?
+                        </h3>
 
-    right: -250px;
+                        <p>
+                            Contact me and let's discuss how
+                            I can help turn your idea into
+                            a professional digital solution.
+                        </p>
 
-    bottom: 5%;
+                        <div class="contact-item">
+                            <strong>Email</strong>
+                            <span>mesudks67gmail.com</span>
+                        </div>
 
-    background: var(--secondary);
+                        <div class="contact-item">
+                            <strong>Phone</strong>
+                            <span>+251914441094</span>
+                        </div>
 
-    opacity: .08;
+                        <div class="contact-item">
+                            <strong>Location</strong>
+                            <span>Ethiopia</span>
+                        </div>
 
-    filter: blur(110px);
+                    </div>
 
-    border-radius: 50%;
 
-}
+                    <form class="contact-form" id="contactForm">
 
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="Mesud Kassaye"
+                            required
+                        >
 
-.hero-container {
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="mesudks67@gmail.com"
+                            required
+                        >
 
-    display: grid;
+                        <input
+                            type="text"
+                            name="subject"
+                            placeholder="Web Design"
+                            required
+                        >
 
-    grid-template-columns:
-        1.15fr .85fr;
+                        <textarea
+                            name="message"
+                            rows="6"
+                            placeholder="Your Message"
+                            required
+                        ></textarea>
 
-    align-items: center;
+                        <button
+                            type="submit"
+                            class="btn primary-btn">
+                            Send Message
+                        </button>
 
-    gap: 80px;
+                    </form>
 
-    position: relative;
+                </div>
 
-    z-index: 2;
+            </div>
 
-}
+        </section>
 
+    </main>
 
-/* ================= HERO TEXT ================= */
 
-.hero-subtitle {
+    <!-- ================= FOOTER ================= -->
 
-    display: flex;
+    <footer class="footer">
 
-    align-items: center;
+        <div class="container">
 
-    gap: 10px;
+            <p>
+                © <span id="year"></span> Mesud.
+                All Rights Reserved.
+            </p>
 
-    color: var(--primary);
+            <p>
+                Designed & Developed by Mesud
+            </p>
 
-    font-size: 14px;
+        </div>
 
-    font-weight: 800;
+    </footer>
 
-    letter-spacing: 3px;
 
-    text-transform: uppercase;
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
 
-    margin-bottom: 18px;
-
-}
-
-
-.hero-subtitle::before {
-
-    content: "";
-
-    width: 35px;
-
-    height: 2px;
-
-    background: var(--primary);
-
-}
-
-
-.hero h1 {
-
-    font-family: "Poppins", sans-serif;
-
-    font-size:
-        clamp(65px, 9vw, 110px);
-
-    line-height: .95;
-
-    font-weight: 800;
-
-    letter-spacing: -5px;
-
-    margin-bottom: 18px;
-
-    background:
-        linear-gradient(
-            135deg,
-            white 20%,
-            var(--primary) 55%,
-            var(--secondary)
-        );
-
-    -webkit-background-clip: text;
-
-    background-clip: text;
-
-    color: transparent;
-
-}
-
-
-.hero h2 {
-
-    font-family: "Poppins", sans-serif;
-
-    font-size:
-        clamp(25px, 3vw, 42px);
-
-    line-height: 1.2;
-
-    font-weight: 700;
-
-    margin-bottom: 25px;
-
-}
-
-
-.hero h2 span {
-    color: var(--primary);
-}
-
-
-.hero-description {
-
-    max-width: 650px;
-
-    color: var(--muted);
-
-    font-size: 17px;
-
-    line-height: 1.9;
-
-    margin-bottom: 35px;
-
-}
-
-
-/* ================= BUTTONS ================= */
-
-.hero-buttons {
-
-    display: flex;
-
-    gap: 15px;
-
-    flex-wrap: wrap;
-
-    margin-bottom: 30px;
-
-}
-
-
-.btn {
-
-    min-height: 52px;
-
-    padding:
-        0 25px;
-
-    display: inline-flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    border-radius: 12px;
-
-    font-size: 14px;
-
-    font-weight: 700;
-
-    transition: var(--transition);
-
-}
-
-
-.primary-btn {
-
-    color: white;
-
-    background:
-        linear-gradient(
-            135deg,
-            var(--primary-dark),
-            var(--secondary)
-        );
-
-    box-shadow:
-        0 12px 30px
-        rgba(56,189,248,.18);
-
-}
-
-
-.primary-btn:hover {
-
-    transform: translateY(-4px);
-
-    box-shadow:
-        0 18px 40px
-        rgba(56,189,248,.3);
-
-}
-
-
-.secondary-btn {
-
-    color: white;
-
-    border:
-        1px solid
-        rgba(255,255,255,.14);
-
-    background:
-        rgba(255,255,255,.04);
-
-    backdrop-filter: blur(10px);
-
-}
-
-
-.secondary-btn:hover {
-
-    transform: translateY(-4px);
-
-    color: var(--primary);
-
-    border-color: var(--primary);
-
-}
-
-
-/* ================= SOCIAL ================= */
-
-.social-links {
-
-    display: flex;
-
-    gap: 25px;
-
-}
-
-
-.social-links a {
-
-    color: var(--muted);
-
-    font-size: 14px;
-
-    font-weight: 600;
-
-    transition: var(--transition);
-
-}
-
-
-.social-links a:hover {
-
-    color: var(--primary);
-
-    transform: translateY(-3px);
-
-}
-
-
-/* ================= PROFILE ================= */
-
-.hero-image {
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-}
-
-
-.profile-card {
-
-    position: relative;
-
-    width: 350px;
-
-    height: 430px;
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    border-radius: 35px;
-
-    background:
-        linear-gradient(
-            145deg,
-            rgba(56,189,248,.12),
-            rgba(139,92,246,.12)
-        );
-
-    border:
-        1px solid
-        rgba(255,255,255,.12);
-
-    backdrop-filter: blur(20px);
-
-    box-shadow:
-        0 30px 80px
-        rgba(0,0,0,.4);
-
-    transform: rotate(3deg);
-
-    transition: var(--transition);
-
-    animation:
-        floating 5s ease-in-out infinite;
-
-}
-
-
-.profile-card:hover {
-
-    transform:
-        rotate(0)
-        translateY(-10px);
-
-}
-
-
-.profile-card::before {
-
-    content: "";
-
-    position: absolute;
-
-    inset: -2px;
-
-    border-radius: 35px;
-
-    background:
-        linear-gradient(
-            135deg,
-            var(--primary),
-            transparent 40%,
-            var(--secondary)
-        );
-
-    opacity: .35;
-
-    z-index: -1;
-
-}
-
-
-.profile-image {
-
-    width: 220px;
-    height: 220px;
-
-    object-fit: cover;
-
-    border-radius: 50%;
-
-    border:
-        8px solid
-        rgba(255,255,255,.08);
-
-    box-shadow:
-        0 0 70px
-        rgba(56,189,248,.25);
-
-}
-
-
-.profile-placeholder {
-
-    display: none;
-
-    width: 220px;
-    height: 220px;
-
-    place-items: center;
-
-    border-radius: 50%;
-
-    font-family: "Poppins", sans-serif;
-
-    font-size: 100px;
-
-    font-weight: 800;
-
-    background:
-        linear-gradient(
-            135deg,
-            var(--primary),
-            var(--secondary)
-        );
-
-    border:
-        8px solid
-        rgba(255,255,255,.08);
-
-}
-
-
-.profile-badge {
-
-    position: absolute;
-
-    bottom: 35px;
-
-    padding:
-        10px 17px;
-
-    border-radius: 30px;
-
-    background:
-        rgba(5,11,22,.85);
-
-    border:
-        1px solid
-        rgba(255,255,255,.1);
-
-    font-size: 12px;
-
-    font-weight: 700;
-
-    color: var(--text-light);
-
-    backdrop-filter: blur(10px);
-
-}
-
-
-.status-dot {
-
-    display: inline-block;
-
-    width: 8px;
-    height: 8px;
-
-    margin-right: 7px;
-
-    border-radius: 50%;
-
-    background: #22c55e;
-
-    box-shadow:
-        0 0 10px #22c55e;
-
-}
-
-
-/* ================= SECTION TITLE ================= */
-
-.section-title {
-
-    text-align: center;
-
-    max-width: 750px;
-
-    margin:
-        0 auto 60px;
-
-}
-
-
-.section-title p {
-
-    color: var(--primary);
-
-    font-size: 13px;
-
-    font-weight: 800;
-
-    letter-spacing: 3px;
-
-    margin-bottom: 12px;
-
-}
-
-
-.section-title h2 {
-
-    font-family: "Poppins", sans-serif;
-
-    font-size:
-        clamp(32px, 4vw, 48px);
-
-    line-height: 1.2;
-
-    font-weight: 800;
-
-}
-
-
-/* ================= ABOUT ================= */
-
-.about-content {
-
-    display: grid;
-
-    grid-template-columns:
-        1.1fr .9fr;
-
-    gap: 70px;
-
-    align-items: center;
-
-}
-
-
-.about-text p {
-
-    color: var(--muted);
-
-    font-size: 16px;
-
-    margin-bottom: 20px;
-
-}
-
-
-.about-text .btn {
-    margin-top: 10px;
-}
-
-
-.about-info {
-
-    display: grid;
-
-    gap: 15px;
-
-}
-
-
-.info-item {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 18px;
-
-    padding: 20px;
-
-    border:
-        1px solid var(--border);
-
-    border-radius: 16px;
-
-    background:
-        rgba(255,255,255,.035);
-
-    transition: var(--transition);
-
-}
-
-
-.info-item:hover {
-
-    transform: translateX(8px);
-
-    border-color:
-        rgba(56,189,248,.3);
-
-}
-
-
-.info-number {
-
-    min-width: 48px;
-
-    height: 48px;
-
-    display: grid;
-
-    place-items: center;
-
-    border-radius: 13px;
-
-    color: var(--primary);
-
-    font-weight: 800;
-
-    background:
-        rgba(56,189,248,.08);
-
-}
-
-
-.info-item strong {
-
-    display: block;
-
-    font-family: "Poppins", sans-serif;
-
-}
-
-
-.info-item span {
-
-    color: var(--muted);
-
-    font-size: 13px;
-
-}
-
-
-/* ================= SKILLS ================= */
-
-.skills-grid {
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(3,1fr);
-
-    gap: 20px;
-
-}
-
-
-.skill-card {
-
-    padding: 30px;
-
-    border:
-        1px solid var(--border);
-
-    border-radius: var(--radius);
-
-    background:
-        rgba(255,255,255,.035);
-
-    backdrop-filter: blur(12px);
-
-    transition: var(--transition);
-
-}
-
-
-.skill-card:hover {
-
-    transform: translateY(-8px);
-
-    border-color:
-        rgba(56,189,248,.3);
-
-    box-shadow:
-        0 20px 60px
-        rgba(0,0,0,.3);
-
-}
-
-
-.skill-icon {
-
-    width: 58px;
-    height: 58px;
-
-    display: grid;
-
-    place-items: center;
-
-    margin-bottom: 20px;
-
-    border-radius: 15px;
-
-    color: white;
-
-    font-size: 14px;
-
-    font-weight: 800;
-
-    background:
-        linear-gradient(
-            135deg,
-            var(--primary-dark),
-            var(--secondary)
-        );
-
-}
-
-
-.skill-card h3 {
-
-    font-family: "Poppins", sans-serif;
-
-    margin-bottom: 8px;
-
-}
-
-
-.skill-card p {
-
-    color: var(--muted);
-
-    font-size: 14px;
-
-}
-
-
-.skill-line {
-
-    height: 3px;
-
-    margin-top: 20px;
-
-    border-radius: 20px;
-
-    background:
-        rgba(255,255,255,.06);
-
-    overflow: hidden;
-
-}
-
-
-.skill-line span {
-
-    display: block;
-
-    width: 80%;
-
-    height: 100%;
-
-    background:
-        linear-gradient(
-            90deg,
-            var(--primary),
-            var(--secondary)
-        );
-
-}
-
-
-/* ================= SERVICES ================= */
-
-.services-grid {
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(4,1fr);
-
-    gap: 20px;
-
-}
-
-
-.service-card {
-
-    padding: 32px 25px;
-
-    text-align: center;
-
-    border:
-        1px solid var(--border);
-
-    border-radius: var(--radius);
-
-    background:
-        rgba(255,255,255,.035);
-
-    transition: var(--transition);
-
-}
-
-
-.service-card:hover {
-
-    transform: translateY(-10px);
-
-    border-color:
-        rgba(139,92,246,.4);
-
-    box-shadow:
-        0 20px 60px
-        rgba(0,0,0,.3);
-
-}
-
-
-.service-icon {
-
-    width: 68px;
-    height: 68px;
-
-    display: grid;
-
-    place-items: center;
-
-    margin:
-        0 auto 20px;
-
-    font-size: 30px;
-
-    border-radius: 18px;
-
-    background:
-        linear-gradient(
-            135deg,
-            rgba(56,189,248,.12),
-            rgba(139,92,246,.12)
-        );
-
-}
-
-
-.service-card h3 {
-
-    font-family: "Poppins", sans-serif;
-
-    font-size: 18px;
-
-    margin-bottom: 10px;
-
-}
-
-
-.service-card p {
-
-    color: var(--muted);
-
-    font-size: 14px;
-
-}
-
-
-/* ================= PROJECTS ================= */
-
-.projects {
-
-    background:
-        rgba(255,255,255,.01);
-
-}
-
-
-.projects-grid {
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(3,1fr);
-
-    gap: 25px;
-
-}
-
-
-.project-card {
-
-    overflow: hidden;
-
-    border:
-        1px solid var(--border);
-
-    border-radius: var(--radius);
-
-    background:
-        rgba(255,255,255,.035);
-
-    transition: var(--transition);
-
-}
-
-
-.project-card:hover {
-
-    transform: translateY(-10px);
-
-    box-shadow:
-        0 25px 70px
-        rgba(0,0,0,.35);
-
-}
-
-
-.project-image {
-
-    height: 220px;
-
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: center;
-
-    justify-content: center;
-
-    text-align: center;
-
-    gap: 8px;
-
-}
-
-
-.project-one {
-
-    background:
-        radial-gradient(
-            circle at 30% 30%,
-            rgba(56,189,248,.35),
-            transparent 30%
-        ),
-        #0b1729;
-
-}
-
-
-.project-two {
-
-    background:
-        radial-gradient(
-            circle at 70% 30%,
-            rgba(139,92,246,.4),
-            transparent 30%
-        ),
-        #11162c;
-
-}
-
-
-.project-three {
-
-    background:
-        radial-gradient(
-            circle at 50% 50%,
-            rgba(34,211,238,.3),
-            transparent 30%
-        ),
-        #091b29;
-
-}
-
-
-.project-image span {
-
-    color: var(--primary);
-
-    font-size: 12px;
-
-    font-weight: 800;
-
-    letter-spacing: 2px;
-
-}
-
-
-.project-image strong {
-
-    font-family: "Poppins", sans-serif;
-
-    font-size: 25px;
-
-}
-
-
-.project-content {
-
-    padding: 25px;
-
-}
-
-
-.project-content h3 {
-
-    font-family: "Poppins", sans-serif;
-
-    font-size: 19px;
-
-    margin-bottom: 10px;
-
-}
-
-
-.project-content p {
-
-    color: var(--muted);
-
-    font-size: 14px;
-
-    margin-bottom: 18px;
-
-}
-
-
-.project-tech {
-
-    color: var(--primary);
-
-    font-size: 12px;
-
-    font-weight: 700;
-
-    margin-bottom: 18px;
-
-}
-
-
-.project-link {
-
-    color: white;
-
-    font-size: 14px;
-
-    font-weight: 700;
-
-    transition: var(--transition);
-
-}
-
-
-.project-link:hover {
-
-    color: var(--primary);
-
-    padding-left: 5px;
-
-}
-
-
-/* ================= CONTACT ================= */
-
-.contact-content {
-
-    display: grid;
-
-    grid-template-columns:
-        .8fr 1.2fr;
-
-    gap: 60px;
-
-}
-
-
-.contact-info h3 {
-
-    font-family: "Poppins", sans-serif;
-
-    font-size: 28px;
-
-    margin-bottom: 15px;
-
-}
-
-
-.contact-info > p {
-
-    color: var(--muted);
-
-    margin-bottom: 30px;
-
-}
-
-
-.contact-item {
-
-    padding: 16px 0;
-
-    border-bottom:
-        1px solid
-        rgba(255,255,255,.07);
-
-}
-
-
-.contact-item strong {
-
-    display: block;
-
-    margin-bottom: 4px;
-
-}
-
-
-.contact-item a,
-.contact-item span {
-
-    color: var(--muted);
-
-    font-size: 14px;
-
-}
-
-
-.contact-item a:hover {
-
-    color: var(--primary);
-
-}
-
-
-.contact-form {
-
-    padding: 30px;
-
-    border:
-        1px solid var(--border);
-
-    border-radius: var(--radius);
-
-    background:
-        rgba(255,255,255,.035);
-
-    backdrop-filter: blur(15px);
-
-}
-
-
-.input-group {
-    margin-bottom: 17px;
-}
-
-
-.input-group label {
-
-    display: block;
-
-    margin-bottom: 7px;
-
-    color: var(--text-light);
-
-    font-size: 13px;
-
-    font-weight: 600;
-
-}
-
-
-.contact-form input,
-.contact-form textarea {
-
-    width: 100%;
-
-    padding: 15px 17px;
-
-    border:
-        1px solid
-        rgba(255,255,255,.08);
-
-    border-radius: 12px;
-
-    outline: none;
-
-    background:
-        rgba(0,0,0,.18);
-
-    color: white;
-
-    transition: var(--transition);
-
-}
-
-
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-
-    color: #64748b;
-
-}
-
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-
-    border-color: var(--primary);
-
-    box-shadow:
-        0 0 0 3px
-        rgba(56,189,248,.08);
-
-}
-
-
-.contact-form textarea {
-
-    resize: vertical;
-
-    min-height: 150px;
-
-}
-
-
-.contact-form .btn {
-
-    width: 100%;
-
-    border: none;
-
-    cursor: pointer;
-
-}
-
-
-.form-message {
-
-    text-align: center;
-
-    margin-top: 15px;
-
-    color: var(--primary);
-
-    font-size: 14px;
-
-}
-
-
-/* ================= FOOTER ================= */
-
-.footer {
-
-    padding: 30px 0;
-
-    border-top:
-        1px solid
-        rgba(255,255,255,.07);
-
-    background:
-        rgba(0,0,0,.2);
-
-}
-
-
-.footer .container {
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: space-between;
-
-    gap: 20px;
-
-    color: var(--muted);
-
-    font-size: 13px;
-
-}
-
-
-.footer strong {
-    color: white;
-}
-
-
-/* ================= ANIMATION ================= */
-
-@keyframes floating {
-
-    0%,
-    100% {
-        transform: rotate(3deg) translateY(0);
-    }
-
-    50% {
-        transform: rotate(3deg) translateY(-15px);
-    }
-
-}
-
-
-/* ================= TABLET ================= */
-
-@media (max-width: 1000px) {
-
-    .hero-container {
-
-        grid-template-columns: 1fr;
-
-        text-align: center;
-
-    }
-
-
-    .hero-subtitle {
-
-        justify-content: center;
-
-    }
-
-
-    .hero-description {
-
-        margin-left: auto;
-
-        margin-right: auto;
-
-    }
-
-
-    .hero-buttons,
-    .social-links {
-
-        justify-content: center;
-
-    }
-
-
-    .hero-image {
-
-        order: -1;
-
-    }
-
-
-    .profile-card {
-
-        width: 290px;
-
-        height: 350px;
-
-    }
-
-
-    .profile-image,
-    .profile-placeholder {
-
-        width: 180px;
-
-        height: 180px;
-
-    }
-
-
-    .about-content {
-
-        grid-template-columns: 1fr;
-
-    }
-
-
-    .services-grid {
-
-        grid-template-columns:
-            repeat(2,1fr);
-
-    }
-
-
-    .skills-grid {
-
-        grid-template-columns:
-            repeat(2,1fr);
-
-    }
-
-
-    .projects-grid {
-
-        grid-template-columns:
-            repeat(2,1fr);
-
-    }
-
-
-    .contact-content {
-
-        grid-template-columns: 1fr;
-
-    }
-
-}
-
-
-/* ================= MOBILE ================= */
-
-@media (max-width: 700px) {
-
-    .navbar {
-
-        position: absolute;
-
-        top: 76px;
-
-        left: 4%;
-
-        width: 92%;
-
-        padding: 25px;
-
-        display: none;
-
-        flex-direction: column;
-
-        gap: 20px;
-
-        border-radius: 18px;
-
-        background:
-            rgba(5,11,22,.96);
-
-        border:
-            1px solid var(--border);
-
-        backdrop-filter: blur(20px);
-
-    }
-
-
-    .navbar.active {
-
-        display: flex;
-
-    }
-
-
-    .menu-btn {
-
-        display: block;
-
-    }
-
-
-    .section {
-
-        padding: 80px 0;
-
-    }
-
-
-    .hero {
-
-        padding-top: 120px;
-
-    }
-
-
-    .hero h1 {
-
-        font-size: 65px;
-
-        letter-spacing: -3px;
-
-    }
-
-
-    .hero h2 {
-
-        font-size: 27px;
-
-    }
-
-
-    .hero-description {
-
-        font-size: 15px;
-
-    }
-
-
-    .profile-card {
-
-        width: 245px;
-
-        height: 300px;
-
-    }
-
-
-    .profile-image,
-    .profile-placeholder {
-
-        width: 150px;
-
-        height: 150px;
-
-    }
-
-
-    .skills-grid,
-    .services-grid,
-    .projects-grid {
-
-        grid-template-columns: 1fr;
-
-    }
-
-
-    .contact-form {
-
-        padding: 22px;
-
-    }
-
-
-    .footer .container {
-
-        flex-direction: column;
-
-        text-align: center;
-
-    }
-
-}
-
-
-/* ================= SMALL MOBILE ================= */
-
-@media (max-width: 420px) {
-
-    .hero h1 {
-
-        font-size: 55px;
-
-    }
-
-
-    .hero h2 {
-
-        font-size: 23px;
-
-    }
-
-
-    .hero-buttons {
-
-        flex-direction: column;
-
-    }
-
-
-    .hero-buttons .btn {
-
-        width: 100%;
-
-    }
-
-
-    .profile-card {
-
-        width: 220px;
-
-        height: 270px;
-
-    }
-
-}
-```
-
+</body>
+</html>
